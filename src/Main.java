@@ -40,5 +40,7 @@ public class Main {
 
         System.out.println("Dado: " + dado);
 
+        // cacchio
+
     }
 }
