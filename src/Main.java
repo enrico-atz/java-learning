@@ -40,5 +40,10 @@ public class Main {
 
         System.out.println("Dado: " + dado);
 
+        System.out.println("Pi greco: " + Math.PI);
+        System.out.println("Eulero: " + Math.E;
+
+
+
     }
 }
