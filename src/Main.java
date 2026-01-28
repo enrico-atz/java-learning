@@ -16,8 +16,6 @@ public class Main {
         System.out.print("Sei uno studente ? (s/n): ");
         char check = scanner.next().charAt(0);
 
-        scanner.close();
-
         boolean isStudent = check == 's';
 
         String student = "ignoto";
@@ -55,7 +53,21 @@ public class Main {
 
         System.out.println(result);
 
-        // cacchio
+        double a;
+        double b;
+        double c;
+
+        System.out.print("Inserisci il lato a: ");
+        a = scanner.nextDouble();
+
+        System.out.print("Inserisci il lato b: ");
+        b = scanner.nextDouble();
+
+        c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+        System.out.println("L'ipotenusa vale: " + c);
+
+        scanner.close();
 
     }
 }
