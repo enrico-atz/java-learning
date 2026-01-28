@@ -67,6 +67,22 @@ public class Main {
 
         System.out.println("L'ipotenusa vale: " + c);
 
+        double radius;
+        double circumference;
+        double area;
+        double volume;
+
+        System.out.print("Inserisci il raggio: ");
+        radius = scanner.nextDouble();
+
+        circumference = 2 * Math.PI * radius;
+        area = Math.PI * Math.pow(radius,2);
+        volume = (4.0/3.0) * Math.PI * Math.pow(radius,3);
+
+        System.out.printf("Circonferenza: %.1f\n", circumference);
+        System.out.printf("Area: %.1f\n", area);
+        System.out.printf("Volume: %.1f\n", volume);
+
         scanner.close();
 
     }
