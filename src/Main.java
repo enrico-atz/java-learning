@@ -83,6 +83,24 @@ public class Main {
         System.out.printf("Area: %.1f\n", area);
         System.out.printf("Volume: %.1f\n", volume);
 
+        double price1 = 9.99;
+        double price2 = 1000.15;
+        double price3 = -54.01;
+
+        System.out.printf("% ,.2f\n", price1);
+        System.out.printf("% ,.2f\n", price2);
+        System.out.printf("% ,.2f\n", price3);
+
+        int id1 = 1;
+        int id2 = 12;
+        int id3 = 123;
+        int id4 = 1234;
+
+        System.out.printf("%04d\n", id1);
+        System.out.printf("%04d\n", id2);
+        System.out.printf("%04d\n", id3);
+        System.out.printf("%04d\n", id4);
+
         scanner.close();
 
     }
