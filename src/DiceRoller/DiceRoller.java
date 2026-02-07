@@ -83,6 +83,7 @@ public class DiceRoller {
             case 4 -> System.out.println(die4);
             case 5 -> System.out.println(die5);
             case 6 -> System.out.println(die6);
+            default -> System.out.println("Lancio non valido");
         }
 
     }
