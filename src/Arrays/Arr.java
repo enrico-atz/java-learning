@@ -22,6 +22,8 @@ public class Arr {
             foods[i] = scanner.nextLine();
         }
 
+        /*
+
         System.out.println("\nTraditional for loop: ");
 
         for(int i = 0; i < numOfFruit; i++) {
@@ -34,6 +36,8 @@ public class Arr {
             System.out.println(food);
         }
 
+        */
+
         Arrays.sort(foods);
 
         System.out.println("\nArray ordinato alfabeticamente: ");
@@ -42,6 +46,25 @@ public class Arr {
             System.out.println(food);
         }
 
+        System.out.print("\nInserisci prodotto da cercare nell' array: ");
+        String target = scanner.next();
+
+        findString(foods,target);
+
         scanner.close();
+    }
+
+    static void findString(String[] array, String target) {
+        boolean isFound = false;
+        for(int i = 0; i < array.length; i++) {
+            if(array[i].equals(target)) {
+                System.out.println("Corrispondenza trovata all'indice: " + i);
+                isFound = true;
+                break;
+            }
+        }
+        if(!isFound) {
+            System.out.println("Nessuna corrispondenza trovata");
+        }
     }
 }
