@@ -42,14 +42,16 @@ public class JavaSlot {
             printRow(row);
             System.out.println("\n");
 
-            if(getPayout(row,bet) > 0) {
-                System.out.println("Hai vinto " + getPayout(row,bet) + " € !");
+            payout = getPayout(row,bet);
+
+            if(payout > 0) {
+                System.out.println("Hai vinto " + payout + " € !");
             }
             else {
                 System.out.println("Hai perso " + bet +" € !");
             }
 
-            balance += getPayout(row,bet);
+            balance += payout;
 
             boolean validAnswer = false;
 
